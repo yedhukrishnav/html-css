@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Task</title>
+    <style>
+        div
+        {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background-color: yellowgreen;
+            animation-name: task1;
+            animation-duration: 5s;
+            animation-direction: normal;
+        }
+        @keyframes task1
+        {
+            0% {
+                background-color: aqua;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: black;
+                left: 300px;
+                top: 0px;
+            }
+            50%{
+                background-color: tomato;
+                left: 300px;
+                top: 300px;
+            }
+            75%{
+                background-color: violet;
+                top: 300px;
+                left: 0px;
+            }
+            100%{
+                background-color:slateblue;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
