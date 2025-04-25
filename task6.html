@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        * 
+        {
+            font-size: large;
+            /* box-sizing: border-box; */
+        }
+        .navigation
+        {
+            background-color: burlywood;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            margin: 0;
+        }
+        .navigation a
+        {
+            text-decoration: none;
+            text-align: center;
+            padding: 1em;
+            border-top: 1px solid greenyellow;
+            border-bottom: 1px solid orange;
+            display: block;
+            color: black;
+        }
+
+
+        @media screen and (max-width: 1000px)
+        {
+            .navigation 
+            {
+                background-color: aqua;
+                justify-content: space-between;
+            }
+        }
+        @media screen and (max-width: 600px)
+        {
+            .navigation
+            {
+flex-flow: column wrap;
+            }
+            .navigation a:hover
+            {
+                background: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <ul class="navigation">
+            <li type="none"><a href="">Home</a></li>
+            <li type="none"><a href="">My Work</a></li>
+            <li type="none"><a href="">About</a></li>
+            <li type="none"><a href="">Contact Us</a></li>
+        </ul>
+
+</body>
+</html>

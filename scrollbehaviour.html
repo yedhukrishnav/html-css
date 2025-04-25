@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        #sec1{
+            background-color: aqua;
+            color: red;
+        }
+        #sec2{
+            background-color: cornflowerblue;
+            color: black;
+        }
+        div{
+            height: 1000px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="sec1">
+        <h2>Division 1</h2>
+        <a href="#sec2">Click here to go to division 2</a>
+    </div>
+    <div id="sec2">
+        <h2>Division 2</h2>
+        <a href="#sec1">Click here to go to division 1</a>
+    </div>
+</body>
+</html>

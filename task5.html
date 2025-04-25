@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <style>
+        *
+        {
+            margin-right: 2%;
+            margin-left: 2%;
+            text-align: center;
+        }
+        h2 
+        {
+            margin-top: 10px;
+            padding-top: 15px;
+            background-color: chartreuse;
+            height: 50px;
+        }
+        img 
+        {
+            height: 300px;
+            width: 300px;
+        }
+        .wrapper
+        {
+            margin: auto;
+            display: grid;
+            
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-row-gap: 30px;
+        }
+        @media screen and (max-width: 1200px)
+        {
+            .wrapper
+            {
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Image gallery</h2>
+
+    <div class="wrapper">
+        <div class="grid-item1">
+            <img src="https://static.scientificamerican.com/sciam/cache/file/C37174A9-488C-49D4-B9C79B4E8EB39287_source.jpg?w=600" alt="">
+        </div>
+        <div class="grid-item2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Lamprotornis_hildebrandti_-Tanzania-8-2c.jpg/1200px-Lamprotornis_hildebrandti_-Tanzania-8-2c.jpg" alt="">
+        </div>
+        <div class="grid-item3">
+            <img src="https://www.tracyvets.com/files/Parakeets.jpeg" alt="">
+        </div>
+        <div class="grid-item4">
+            <img src="https://cdn.britannica.com/10/250610-050-BC5CCDAF/Zebra-finch-Taeniopygia-guttata-bird.jpg" alt="">
+        </div>
+        <div class="grid-item5">
+            <img src="https://cdn.shopify.com/s/files/1/0782/9346/7416/files/European_roller_480x480.png?v=1702633105" alt="">
+        </div>
+        <div class="grid-item6">
+            <img src="https://today.usc.edu/wp-content/uploads/2019/11/Taiwan-Blue-Magpie-web.jpg" alt="">
+        </div>
+        <div class="grid-item7">
+            <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/4268/image/s768x1300/WC202209_LAST_006_430968_reduced.jpg" alt="">
+        </div>
+        <div class="grid-item8">
+            <img src="https://images.saymedia-content.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2MDY4MDU4MDcyODQ3/worlds-most-beautiful-birds.jpg" alt="">
+        </div>
+        <div class="grid-item9">
+            <img src="https://media.audubon.org/nas_birdapi_hero/sfw_fixed_01-29-2011-223.jpg?width=670&height=896&auto=webp&quality=90&fit=crop&enable=upscale" alt="">
+        </div>
+    </div>
+</body>
+</html>
