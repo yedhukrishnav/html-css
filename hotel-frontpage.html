@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+      .cardImage{
+        height: 300px;
+        width: 100%;
+      }
+      footer{
+        height: 300px;
+        width: 100%;
+        background-color: black;
+      }
+      .parent{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+      }
+      iframe{
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid bg-warning">
+        <h2 class="navbar-brand" style="font-family: Brush Script MT; font-size: 2.0em;">Tasty Foods</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dining</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rooms
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shared</a></li>
+                <li><a class="dropdown-item" href="#">Non - AC</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">AC</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" >About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://cdn.tatlerasia.com/asiatatler/i/hk/2021/07/07032647-most-expensive-hotel-rooms-suites-in-the-world-rosewood-copy_cover_1366x768.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://galeriemagazine.com/wp-content/uploads/2024/07/Hotel_du_couvent_cover.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/d5/3a/a7/cover.jpg?w=900&h=500&s=1" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto mt-5">
+      <div class="col">
+        <div class="card">
+          <img class="cardImage" src="https://cdn.pixabay.com/photo/2022/07/15/18/17/spicy-burger-7323694_640.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ham burger</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="cardImage" src="https://cdn.pixabay.com/photo/2022/07/15/18/12/cheese-burger-7323674_640.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jumbo burger</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="cardImage" src="https://w0.peakpx.com/wallpaper/612/979/HD-wallpaper-food-burger.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zinger burger</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="cardImage" src="https://images3.alphacoders.com/922/922680.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Beef burger</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="cardImage" src="https://img.freepik.com/photos-premium/burger-planche-bois_770606-2733.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Burger Sun Une</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="cardImage" src="https://t3.ftcdn.net/jpg/00/94/92/10/360_F_94921053_Lc06uabhNtMNSKq6H5gBhZVDoI6nKjXW.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Smoked Burger</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <footer class="mt-3">
+        <div class="row container-fluid">
+          <div class="col-md-8">
+            <address>PT Usha Rd, Vellayil, Kozhikode, Kerala 673032 0495 661 3000</address>
+          </div>
+          <div class="col-md-4">
+            <div class="parent">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.435049061272!2d75.86390547452365!3d11.302878449263694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65cee39d8f9c7%3A0x7c159b2e83789ce0!2sHOTEL%20MONAD!5e0!3m2!1sen!2sin!4v1746410505624!5m2!1sen!2sin"
+                width="500"
+                height="250"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>         
+          </div>
+        </div>
+     
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
