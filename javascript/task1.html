@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo">
+    <input type="text" name="" id="demo1">
+    <button onclick="Add()">+</button>
+    <button onclick="Subtract()">-</button>
+    <button onclick="Multiply()">*</button>
+    <button onclick="Divide()">/</button>
+    <input type="text" name="" id="demo3">
+
+
+    <div style="margin-top: 20px ;">
+        <input type="text" name="" id="demo4" placeholder="length of the side">
+        <button onclick="Area()">Area</button>
+        <input type="text" name="" id="demo6">
+    </div>
+    <!-- <p id="demo2"></p> -->
+
+    <script>
+                function Area()
+        {
+            var a
+            a = Number(document.getElementById("demo4").value)
+            c = a*a
+            document.getElementById("demo6").value = c
+
+            // document.getElementById("demo2").innerHTML = a
+        }
+        function Add()
+        {
+            var a,b
+            a = Number(document.getElementById("demo").value)
+            b = Number(document.getElementById("demo1").value)
+            c = a+b
+            document.getElementById("demo3").value = c
+
+            // document.getElementById("demo2").innerHTML = a
+        }
+        function Subtract()
+        {
+            var a,b
+            a = Number(document.getElementById("demo").value)
+            b = Number(document.getElementById("demo1").value)
+            c = a-b
+            document.getElementById("demo3").value = c
+
+            // document.getElementById("demo2").innerHTML = a
+        }
+        function Multiply()
+        {
+            var a,b
+            a = Number(document.getElementById("demo").value)
+            b = Number(document.getElementById("demo1").value)
+            c = a*b
+            document.getElementById("demo3").value = c
+
+            // document.getElementById("demo2").innerHTML = a
+        }
+        function Divide()
+        {
+            var a,b
+            a = Number(document.getElementById("demo").value)
+            b = Number(document.getElementById("demo1").value)
+            c = a/b
+            document.getElementById("demo3").value = c
+
+            // document.getElementById("demo2").innerHTML = a
+        }
+    </script>
+</body>
+</html>

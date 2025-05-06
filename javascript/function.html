@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo">
+    <input type="text" name="" id="demo1">
+    <button onclick="display()">Submit</button>
+    <input type="text" name="" id="demo3">
+
+    <p id="demo2"></p>
+
+    <script>
+        function display()
+        {
+            var a,b
+            a = Number(document.getElementById("demo").value)
+            b = Number(document.getElementById("demo1").value)
+            c = a+b
+            document.getElementById("demo3").value = c
+
+            // document.getElementById("demo2").innerHTML = a
+        }
+    </script>
+</body>
+</html>
