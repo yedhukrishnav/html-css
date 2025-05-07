@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+
+
+        // var text = ""
+        // while(i<5) {
+        //     text += i + "<br>"
+        //     i++
+        // }
+        // document.getElementById("demo").innerHTML = text
+
+
+        // var text1 = ""
+        // do {
+        //     text1 += j + "<br>"
+        //     j++
+        // }
+        // while (j<3)
+        // document.getElementById("demo1").innerHTML = text1
+
+                
+        let i=1
+        let k=1
+        let j =1
+        var pattern = ""
+        let row = 10
+
+        
+        while(i<=row) {
+            j=1
+            while(j<=row-i) {
+                pattern += " "
+                j++
+            }
+            k=1
+            while(k <= i) {
+                pattern += "*"
+                k++
+            }
+
+            pattern += "\n"
+            i++
+        }
+        document.write(`<pre>${pattern}</pre>`)
+    </script>
+</body>
+</html>

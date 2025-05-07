@@ -13,15 +13,31 @@
         function check() 
         {
             a = Number(document.getElementById("demo").value)
-             
-            if (a>10)
+             //else - if conditional statements
+            if (a == 10)
             {
-                document.getElementById("demo1").value = "Greater"
+                document.getElementById("demo1").value = "a equal to 10"
             }
-            else
+            else if (a == 20)
             {
-                document.getElementById("demo1").value = "Lesser"
+                document.getElementById("demo1").value = "a equal to 20"
             }
+            else if (a == 30)
+            {
+                document.getElementById("demo1").value = "a equal to 30"
+            }
+            else{
+                document.getElementById("demo1").value = "default case"
+            }
+            // if - else conditional statements
+            // if (a>10)
+            // {
+            //     document.getElementById("demo1").value = "Greater"
+            // }
+            // else
+            // {
+            //     document.getElementById("demo1").value = "Lesser"
+            // }
         }
     </script>
 </body>

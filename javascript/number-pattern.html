@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 9
+        let text = ""
+        for(let i=1; i<=num; i++) {
+            for(let j=1; j<=i; j++) {
+                text += i
+            }
+            text += "\n"
+        }
+        document.write(`<pre>${text}</pre>`)
+
+        text = ""
+        for(let i=1; i<=num; i++) {
+            for(let j=1; j<=i; j++) {
+                text += j
+            }
+            text += "\n"
+        }
+        document.write(`<pre>${text}</pre>`)
+
+        text = ""
+        for(let i=1; i<=num; i++) {
+            for(let j=1; j<=num-i; j++) {
+                text += " "
+            }
+            for(let j=1; j<=i; j++) {
+                text += "*"
+            }
+            text += "\n"
+        }
+        document.write(`<pre>${text}</pre>`)
+    </script>
+</body>
+</html>

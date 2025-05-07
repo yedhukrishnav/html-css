@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="demo">
+    <input type="text" name="" id="demo1">
+    <button onclick="check()">Check</button>
+    <script>
+        function check()
+        {
+            a = Number(document.getElementById("demo").value)
+            let value
+
+            switch(a)
+            {
+                case 1:
+                    value = "sunday"
+                    console.log(value)
+                    break
+                case 2:
+                    value = "monday"
+                    break
+                case 3:
+                    value = "tuesday"
+                    break
+                case 4:
+                    value = "wednesday"
+                    break   
+                case 5:
+                    value = "thursday"
+                    break
+                case 6:
+                    value = "friday"
+                    break
+                case 7:
+                    value = "saturday"
+                    break
+                default:
+                    value = "invalid day"
+                    break
+                    
+            }
+            document.getElementById("demo1").value = value
+        }
+    </script>
+</body>
+</html>
