@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Focus: <input type="text" id="focus" onfocus="onFocus()"> <br>
+    Key Down : <input type="text" id="keydown" onkeydown="onKeyDown()"> <br>
+    Key up : <input type="text" id="keyup" onkeyup="onKeyUp()"> <br>
+    on blur : <input type="text" id="blurfn" onfocus="onFocus()" onblur="onBlur()"> <br>
+    <h2 id="heading" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse</h2>
+
+    <script>
+        function mouseOver() {
+            document.getElementById("heading").style.color = "red"
+        }
+
+        function mouseOut() {
+            document.getElementById("heading").style.color = "blue"
+        }
+
+        function onBlur() {
+            document.getElementById("blurfn").style.background = "red"
+        }
+
+        function onFocus() {
+            document.getElementById("blurfn").style.background = "aqua"
+        }
+        function onKeyDown() {
+            alert("key pressed")
+        }
+
+        function onKeyUp() {
+            var x = document.getElementById("keyup")
+            x.value = x.value.toUpperCase()
+        }
+    </script>
+</body>
+</html>

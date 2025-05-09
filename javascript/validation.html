@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+    name: <input type="text" id="name" onkeyup="clearMsg('sp1')"> <span id="sp1" style="color: red;"></span><br><br>
+    Mobile: <input type="text" id="mobile" onkeyup="clearMsg('sp2')" pattern="[0-9]{10}"> <span id="sp2" style="color: red;"></span> <br><br>
+    Adrdess: <input type="text" id="address" onkeyup="clearMsg('sp3')">  <span id="sp3" style="color: red;"></span><br><br>
+    Email: <input type="email" id="email" onkeyup="clearMsg('sp4')" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"> <span id="sp4" style="color: red;"></span> <br><br>
+    Password: <input type="password" id="password" onkeyup="clearMsg('sp5')" minlength="6" maxlength="6"> <span id="sp5" style="color: red;"></span> <br><br>
+    <button id="submit" onclick="return validate()">Submit</button>
+</form>
+
+    <script>
+        function validate() {
+            var name = document.getElementById("name").value
+            var mobile = document.getElementById("mobile").value
+            var address = document.getElementById("address").value
+            var email = document.getElementById("email").value
+            var password = document.getElementById("password").value
+
+            if (name == "") {
+                document.getElementById("sp1").innerHTML = "Enter name"
+                return false
+            }
+            if (mobile == "") {
+                document.getElementById("sp2").innerHTML = "Enter mobile number"
+                return false
+            }
+            if (address == "") {
+                document.getElementById("sp3").innerHTML = "Enter address"
+                return false
+            }
+            if (email == "") {
+                document.getElementById("sp4").innerHTML = "Enter email"
+                return false
+            }
+            if (password == "") {
+                document.getElementById("sp5").innerHTML = "Enter password"
+                return false
+            }
+        }
+
+        function clearMsg(span) {
+            document.getElementById(span).innerHTML = ""
+        }
+    </script>
+</body>
+</html>

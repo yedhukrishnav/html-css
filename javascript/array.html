@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        // var array1 = ["B", "D", "A", "C"]
+        // array1.sort()
+        // array1.reverse()
+        // document.getElementById("demo").innerHTML = array1
+
+        // var array2 = ["apple", "mango", "anar", "jackfruit"]
+        // let i =0
+        // var text =""
+        // while(i<array2.length) {
+        //     text += array2[i] + "<br>"
+        //     i++
+        // }
+        // document.getElementById("demo").innerHTML = text
+
+        // var array2 = ["apple", "mango", "anar", "jackfruit"]
+        // array2.push("pineapple")
+        // document.getElementById("demo").innerHTML = array2
+        // array2.pop()
+        // document.getElementById("demo1").innerHTML = array2
+
+        // var array2 = ["apple", "mango", "anar", "jackfruit"]
+        // document.getElementById("demo").innerHTML = array2.shift()
+        // document.getElementById("demo1").innerHTML = array2
+
+        // var array2 = ["apple", "mango", "anar", "jackfruit"]
+        // array2.unshift("guva", "orange")
+        // document.getElementById("demo1").innerHTML = array2
+
+        // var array2 = ["apple", "mango", "anar", "jackfruit"]
+        // array2[3] = "orange"
+        // document.getElementById("demo1").innerHTML = array2
+
+        // var boys = ["amal", "neeraj"]
+        // var girls = ["anu", "anusree"]
+        // var common = boys.concat(girls)
+        // document.getElementById("demo").innerHTML = common
+
+        //splice : method to add element into an array to desired position
+        // var array2 = ["apple", "mango", "anar", "jackfruit"]
+        // array2.splice(2,3, "grapes", "orange", "strawberry")
+        // document.getElementById("demo").innerHTML = array2
+
+        // slice: method to create new array from an existing array without changing the source array
+        var array2 = ["apple", "mango", "anar", "jackfruit", "grapes", "orange", "strawberry"]
+        var newarray = array2.slice(2)
+        document.getElementById("demo").innerHTML = newarray
+    </script>
+</body>
+</html>
