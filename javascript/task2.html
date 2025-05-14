@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="armstrong" >
+    <button onclick="CheckNum()">Check armstrong</button>
+    <p id="show"></p>
+
+    <input type="text" id="n-palindrome" >
+    <button onclick="CheckNumPal()">Check palindrome</button>
+    <p id="show1"></p>
+    <script>
+        function CheckNumPal() {
+            var num = Number(document.getElementById("n-palindrome").value)
+            let i=0, check, text=""
+            check = num
+            while(num>=1) {
+                check[i] = num%10
+                num = Math.floor(num/10)
+                i++
+            }
+            var check2 = check1.reverse()
+            if(check1 == check2) {
+                text = "palindrome"
+            }
+            else {
+                text = "not  palindrome"
+            }
+            document.getElementById("show1").innerHTML = text
+
+        }
+        function CheckNum() {
+            var num = Number(document.getElementById("armstrong").value)
+            let len=0, digit=0, sum=0
+            var check =num
+            while (num >= 1) {
+                len++;
+                num = Math.floor(num / 10);
+            }
+            while (check >= 1) {
+                digit = check % 10;
+                sum += digit ** len;
+                check = Math.floor(check / 10);
+            }
+            document.getElementById("show").innerHTML = sum
+        }
+        var row = 8
+        var text = ""
+        for(let i=1; i<=row; i++) {
+            for(let j=1; j<i; j++) {
+                text += " "
+            }
+            for(let k=0; k<=(2*row-2*i); k++) {
+                text += "*"
+            }
+            text += "\n"
+        }
+        document.write(`<pre>${text}</pre>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+    <button>click here</button>
+    <p>jQuery animation</p>
+    <div style="height: 100px; width: 100px; background-color: red; position: absolute;">
+        <p>hello</p>
+    </div>
+
+    <script>
+
+        // $(document).ready(function()
+        // {
+        //     // $("button").click(function()
+        //     // {
+        //     //     $("div").animate({
+        //     //         left:'550px'
+        //     //     })
+        //     // })
+        // })
+
+
+        // $(document).ready(function()
+        // {
+            // $("button").click(function()
+            // {
+            //     $("div").animate({
+            //         left: '550px',
+            //         height: '500px',
+            //         width: '500px',
+            //         opacity: '0.5'
+            //     })
+            // })
+        // })
+
+        
+            // $(document).ready(function()
+            // {
+            //     $("button").click(function()
+            //     {
+            //         $("div").animate({
+            //         left: '500px',
+            //         height: '+=200px',
+            //         width: '+=200px'
+            //     })
+            //     })
+            // })
+
+
+            // $(document).ready(function()
+            // {
+            //     $("button").click(function() 
+            //     {
+            //         $("div").animate({
+            //             height: 'toggle'
+            //         })
+            //     })
+            // })
+
+            // $(document).ready(function()
+            // {
+            //     $("button").click(function()
+            //     {
+            //         var div = $("div")
+            //         div.animate({
+            //             height: '500px',
+            //             opacity: '0.5'
+            //         }, "slow"),
+            //         div.animate({
+            //             width: '800px',
+            //             opacity: '0.3'
+            //         }, "slow"),
+            //         div.animate({
+            //             height: '200px',
+            //             opacity: '0.7'
+            //         }, "slow"),
+            //         div.animate({
+            //             width: '300px',
+            //             opacity: '0.8'
+            //         }, "slow")
+            //     })
+            // })
+
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                var div = $("div")
+                div.animate({left: '500px'}, "slow"),
+                div.animate({fontSize: '3.0em'}, "slow")
+            })
+        })
+    </script>
+</body>
+</html>

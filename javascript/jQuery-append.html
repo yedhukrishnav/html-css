@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+    <br>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <br>
+    <button id="append-para">append sentence</button>
+    <button id="append-list">append list item</button>
+    <script>
+        $(document).ready(function()
+        {
+            $("#append-para").click(function()
+            {
+                $("p").append("<b>: appended paragraph</b>")
+            })
+            $("#append-list").click(function()
+            {
+                $("ol").append("<li><b>newly added list item</b></li>")
+            })
+        })
+    </script>
+</body>
+</html>

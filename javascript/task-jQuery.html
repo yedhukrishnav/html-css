@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+            <h2 style="color: red; font-size: 7.0em; text-align: center;">click </h2>
+        <div style="display: flex; justify-content: center;">
+            <button>click here</button>
+        </div>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("h2").slideUp(400).slideDown(400)
+            })
+        })
+    </script>
+</body>
+</html>

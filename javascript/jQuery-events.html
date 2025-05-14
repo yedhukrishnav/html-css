@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>if you double click here, i will disappear</p>
+
+<br>
+        <input type="text" name="" id="" placeholder="click here">
+
+        <script>
+            $(document).ready(function()
+            {
+                // $("p").dblclick(function()
+                // {
+                //     $(this).hide()
+                // })
+                // $("p").mouseenter(function()
+                // {
+                //     alert("mouse entered")
+                // })
+                // $("p").mouseleave(function ()
+                // {
+                //     alert("mouse left")
+                // })
+                // $("p").mousedown(function()
+                // {
+                //     alert("clicked!")
+                // })
+                // $("p").hover(function()
+                // {
+                //     alert("hovered")
+                // })
+                // $("input").keydown(function() 
+                //     {
+                //         $("input").css("background-color", "red")
+                //     })
+                // $("input").keyup(function()
+                // {
+                //     $("input").css("background-color", "yellow")
+                // })
+                // $("input").focus(function ()
+                // {
+                //     $(this).css("background-color", "red")
+                // })
+                $("input").blur(function()
+                {
+                    $(this).css("background-color", "yellow")
+                })
+            })
+        </script>
+</body>
+</html>
